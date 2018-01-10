@@ -1,0 +1,218 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 17, 2017, 11:42:12 PM
+    Author     : Roger Boza
+*/
+
+/*******************************************************************************
+ *                                                                             *
+ * Scrollpane                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+.scroll-pane {
+    -fx-background-color: white;  
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Button			                       			       *
+ *                                                                             *
+ ******************************************************************************/
+.button-flat {
+    -fx-effect: null;
+    -fx-background-color: transparent;
+    -fx-text-fill: #f44336;
+}
+
+.button-raised {
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.30), 6.0, 0.3, 0, 1);
+    -fx-background-color: #f44336;
+    -fx-text-weight: Bold;
+    -fx-text-fill: white;
+}
+
+.button-raised, .button-flat {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Hyperlink			                       			       *
+ *                                                                             *
+ ******************************************************************************/
+.hyperLink {
+   -fx-text-fill: #f44336;
+}
+
+.hyperLink:hover {
+   -fx-text-fill: #f44336;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Textbox			                       			       *
+ *                                                                             *
+ ******************************************************************************/
+.textbox {
+   -fx-text-fill: black;
+   -jfx-focus-color: black;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Panes			                       			       *
+ *                                                                             *
+ ******************************************************************************/
+.pane {
+   -fx-background-color: white;
+}
+
+.tile {
+   -fx-background-color: lightgrey;
+   -fx-background-radius: 15 15 15 15;
+   -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+/*******************************************************************************
+ *                                                                             *
+ * Labels			                       			       *
+ *                                                                             *
+ ******************************************************************************/
+.headerlabel {
+   -fx-background-color: #4d4d4d;
+   -fx-background-radius: 2 2 2 2;
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+   -fx-padding: 5 5 5 10;
+}
+
+.emaillabel {
+   -fx-text-fill: #f44336;
+   -fx-font-weight: bold;
+   -fx-font-style: italic;
+   -fx-font-size: 20;
+}
+
+.namelabel {
+   -fx-text-fill: black;
+   -fx-font-weight: bold;
+   -fx-font-size: 20;
+}
+
+.cartlabel {
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-font-size: 14;
+   -fx-background-color: black;
+   -fx-background-radius: 14 14 14 14;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Search			                       			       *
+ *                                                                             *
+ ******************************************************************************/
+.search_style {
+   -fx-background-color: #212121;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Check box			                       			       *
+ *                                                                             *
+ ******************************************************************************/
+.check-box {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: #f44336;
+    -fx-border-radius: 2px; 
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #f44336;
+}
+
+.check-box-large {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+.check-box-large .box {
+    -fx-background-color: white;
+    -fx-border-color: #f44336;
+    -fx-border-radius: 2px; 
+}
+
+.check-box-large:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box-large:selected .box {
+    -fx-background-color: #f44336;
+}
+
+
+
+
+.radiobutton .radio {
+    -fx-background-insets: 0;
+    -fx-border-color: #f44336;
+    -fx-border-radius: 10px; 
+}
+
+.radiobutton .dot {
+    -fx-mark-highlight-color: #f44336 ;
+    -fx-mark-color: #f44336 ;
+}
+
+
+.combo-box1{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+    
+}
+.combo-box1 > .list-cell {
+    -fx-background-color: #f44336;
+    -fx-background-insets: -3 0 -3 0;
+    -fx-background-radius: 2 0 0 2;
+}
+.combo-box1:contains-focus {
+    -fx-background-color: #f44336;
+    -fx-background-insets: -3 0 -3 0;
+    -fx-background-radius: 2 0 0 2;
+}
+.combo-box1:focused > .list-cell{
+    -fx-background-color: #f44336;
+    -fx-background-insets: -3 0 -3 0;
+    -fx-background-radius: 2 0 0 2;
+}
+
+.combo-box1-popup .list-view .list-cell:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #f44336;
+}
+
+.combo-box1 .cell:selected {
+    -fx-text-fill: white;
+    -fx-background-color: #f44336;
+}
